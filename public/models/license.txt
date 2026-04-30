@@ -1,0 +1,11 @@
+Model Information:
+* title:	Round chair
+* source:	https://sketchfab.com/3d-models/round-chair-b4c55aaccbb5453ebbe1fecf5d0cd40e
+* author:	CGulia (https://sketchfab.com/CGulia)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Round chair" (https://sketchfab.com/3d-models/round-chair-b4c55aaccbb5453ebbe1fecf5d0cd40e) by CGulia (https://sketchfab.com/CGulia) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
