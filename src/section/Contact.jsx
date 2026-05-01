@@ -1,7 +1,9 @@
 import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser"
+import { useMediaQuery } from 'react-responsive'
 
 function Contact() {
+    const inmobile=useMediaQuery({maxWidth:767})
     // service ID: 
     const formRef = useRef()
     const [loading, setloading] = useState(false)
@@ -36,10 +38,10 @@ function Contact() {
     }
     return (
         <section className='c-space my-20' id='contact'>
-            <div className='relative min-h-screen flex flex-col items-center justify-center '>
-                <img src="/assets/terminal.png" alt="terminal-bg" className="absolute min-h-screen" />
-                <div className='contact-container pt-32 '>
-                    <h3 className='head-text'>Let's talk</h3>
+            <div className='relative min-h-screen flex flex-col items-center justify-center  '>
+               {!inmobile  &&  <img src="/assets/terminal.png" alt="terminal-bg" className="absolute min-h-screen" />}
+                <div className='contact-container'>
+                    <h3 className='head-text pt-28'>Let's talk</h3>
                     <p className='text-white text-lg'>I'm a MERN Stack and React Native Expo developer available for freelance projects and full-time roles. If you have a project in mind or looking to hire, feel free to reach out. Let's turn your ideas into reality</p>
                     <form action="" className='mt-12 space-y-7 flex flex-col' onSubmit={submitHandler}>
                         <label className='space-y-3'>

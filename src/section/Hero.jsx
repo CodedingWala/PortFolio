@@ -22,7 +22,7 @@ const Hero = () => {
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
     return (
-        <section className='min-h-screen mx-auto'>
+        <section className='min-h-screen mx-auto' id='home'>
             <div className='w-full flex flex-col mx-auto sm:mt-30 mt-20 c-space gap-3'>
                 <p className='sm:text-3xl text-2xl font-medium font-generalsans text-white text-center'>Hi I am Javed Ansari<span className='waving-hand ml-2'>🤖</span></p>
                 <p className='hero_tag text-gray_gradient'>MERN & Native App Developer</p>
@@ -34,8 +34,8 @@ const Hero = () => {
                         <perspectiveCamera makeDefault position={[0, 0, 30]} />
                         {/*the Computer with desk model is covered by the HeroCamera component so it a can bee moved or by moving the mouse */}
                         <HeroCamera ismobile={isMobile}>
-                            <Suspense fallback={<CanvasLoader/>}>
-                                <HackerRoom
+                            <Suspense fallback={<CanvasLoader />} >
+                            <HackerRoom
                                 scale={isMobile ? 0.02 : 0.04}
                                 rotation={[0, 160, 0]}
                                 position={isMobile ? [0, -2, 0] : [0, -3, 0]}
@@ -57,7 +57,6 @@ const Hero = () => {
                         <ambientLight intensity={1} />
 
                         <directionalLight position={[10, 10, 10]} intensity={1} />
-                   
                 </Canvas>
                 <div className='absolute bottom-7 z-10 w-full left-0 right-0 c-space'>
                     <a href="#about">
