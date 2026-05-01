@@ -41,7 +41,7 @@ function About() {
                                 width={326}
                                 backgroundColor='rgba(0,0,0,0)'
                                 backgroundImageOpecity={0.5}
-                                globeImageUrl={"https:unpkg.com/three-globe/example/img/earth-day.jpg"}
+                                globeImageUrl={"https://unpkg.com/three-globe/example/img/earth-day.jpg"}
                                 showAtmosphere={true}
                                 labelsData={[{
                                     lat: 19.0760,   // latitude
