@@ -41,7 +41,7 @@ function About() {
                                 width={326}
                                 backgroundColor='rgba(0,0,0,0)'
                                 backgroundImageOpecity={0.5}
-                                globeImageUrl={"https:unpkg.com/three-globe/example/img/earth-night.jpg"}
+                                globeImageUrl={"https:unpkg.com/three-globe/example/img/earth-day.jpg"}
                                 showAtmosphere={true}
                                 labelsData={[{
                                     lat: 19.0760,   // latitude
@@ -56,7 +56,7 @@ function About() {
                         <div>
                             <p className='grid-headtext'>Prefer working office</p>
                             <p className='grid-subtext'>I live in malad (east) mumbai maharashtra India</p>
-                             <Button name="Contact me" containerClass="w-full mt-10" isBeam={true} />
+                             <a href="#contact"><Button name="Contact me" containerClass="w-full mt-10" isBeam={true} /></a>
                         </div>
                     </div>
                 </div>

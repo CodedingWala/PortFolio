@@ -30,16 +30,17 @@ const Hero = () => {
             <div className='w-full h-full inset-0 absolute'>
                 <Leva />
                 <Canvas className='w-full h-full'>
-                    <Suspense fallback={<CanvasLoader />} >
 
                         <perspectiveCamera makeDefault position={[0, 0, 30]} />
                         {/*the Computer with desk model is covered by the HeroCamera component so it a can bee moved or by moving the mouse */}
                         <HeroCamera ismobile={isMobile}>
-                            <HackerRoom
+                            <Suspense fallback={<CanvasLoader/>}>
+                                <HackerRoom
                                 scale={isMobile ? 0.02 : 0.04}
                                 rotation={[0, 160, 0]}
                                 position={isMobile ? [0, -2, 0] : [0, -3, 0]}
                             />
+                            </Suspense>
 
                         </HeroCamera>
                         <group>
@@ -56,7 +57,7 @@ const Hero = () => {
                         <ambientLight intensity={1} />
 
                         <directionalLight position={[10, 10, 10]} intensity={1} />
-                    </Suspense>
+                   
                 </Canvas>
                 <div className='absolute bottom-7 z-10 w-full left-0 right-0 c-space'>
                     <a href="#about">
